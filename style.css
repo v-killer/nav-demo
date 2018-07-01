@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: noen;
+}
+body{
+    background: grey url(./wall.jpg) no-repeat center center;
+    background-size: cover; /*背景图自适应屏幕*/
+}
+kbd {
+  display: inline-block;
+  text-transform: uppercase; /*变成大写字母*/
+  position: relative;
+}
+kbd > button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+kbd:hover > button {
+  display: inline-block;
+}
+main {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main {
+  display: inline-block;
+}
+#main > div:nth-child(2) {
+  /*选择器是id位于第一个时需要在前面加#*/
+  margin-left: -20px;
+}
+#main > div:nth-child(3) { 
+  margin-left: -80px;
+}
+.wrapper{
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+}
+.key {
+  width: 50px;
+  height: 40px;
+  background: linear-gradient(to bottom, #292929 0%, #111111 100%);
+  border: 1px solid #373737;
+  border-radius: 6px;
+  color: #c5c5c5;
+  box-shadow: 0 0 0 1px #1A1B1C, 0 0 0 2px #1F2020, 0 3px 0 2px #080808;
+  font-size: 16px;
+  font-family: Helvetica;
+  position: relative;
+}
+.row{
+    margin: 20px 0px;
+}
+.row .key{
+    margin: 0 10px;
+}.key img{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 4px;
+    bottom: 2px;
+}
+.key .text{
+    position: absolute;
+    left: 4px;
+    top: 2px;
+}
